@@ -11,11 +11,18 @@
   <body>
     <div class="content">
 
+      <p style="padding-bottom: 36pt">
+        <span style="color: red">DRAFT</span> -
+        <a href="https://github.com/softwarecommons/howtoshare.software/issues/1"
+          >discuss on GitHub</a
+        >
+      </p>
+
       <h1>How to Share Software</h1>
 
-      <p>This website is about the different ways to share software source
-      code. Shared source code is called "source available," and there are four
-      levels of source available software.</p>
+      <p class="description">This website is about the different ways to share
+      software source code. Shared source code is called "source available,"
+      and there are four levels of source available software.</p>
 
       <h2>Source Available</h2>
 
@@ -24,42 +31,133 @@
       <div class="level">
         <h4>Level 4: <b>Public Domain Software</b></h4>
 
-        <p>Public domain does not exist in all countries, but where it does it
-        is the highest level of sharing. There are no restrictions.</p>
-
+        <table>
+          <tr class="governance">
+            <th>Governance</th>
+            <td>communal</td>
+          </tr>
+          <tr class="freedoms">
+            <th>Freedoms</th>
+            <td>
+              <span class="green">run</span>
+              <span class="green">read</span>
+              <span class="green">modify</span>
+              <span class="green">redistribute</span>
+            </td>
+          </tr>
+          <tr class="notes">
+            <th>Notes</th>
+            <td class="notes">Public domain does not exist equally in all
+              countries. Insofar as it exists, it is the highest level of
+              sharing. There are no restrictions.</td>
+          </tr>
+        </table>
       </div>
 
       <div class="level">
         <h4>Level 3: <b>Free and Open Source Software (FOSS) Projects</b></h4>
 
-        <p>Open Source software is shared with minimal restrictions, such as no
-        use without attribution, no use without sharing-alike, or no patent
-        litigation. It is the best fit for community projects.</p>
-
+        <table>
+          <tr class="governance">
+            <th>Governance</th>
+            <td>communal</td>
+          </tr>
+          <tr class="freedoms">
+            <th>Freedoms</th>
+            <td>
+              <span class="green">run with minimal restrictions</span>
+              <span class="green">read</span>
+              <span class="greenish">modify with possible restrictions</span>
+              <span class="greenish">redistribute with some restrictions</span>
+            </td>
+          </tr>
+          <tr class="notes">
+            <th>Notes</th>
+            <td>Open Source software is shared with minimal
+              restrictions, such as no use without attribution, no use without
+              sharing-alike, or no patent litigation.</p>
+          </tr>
+        </table>
       </div>
 
       <div class="level">
         <h4>Level 2: <b>Open Products</b></h4>
 
-        <p>Some companies make their source code publicly available with usage
-        restrictions in line with their business model, such as: no use in a
-        competing product, or no redistribution.</p>
-
+        <table>
+          <tr class="governance">
+            <th>Governance</th>
+            <td>corporate</td>
+          </tr>
+          <tr class="freedoms">
+            <th>Freedoms</th>
+            <td>
+              <span class="greenish">run with restrictions</span>
+              <span class="green">read</span>
+              <span class="greenish">probably modify</span>
+              <span class="orange">possibly redistribute</span>
+            </td>
+          </tr>
+          <tr class="notes">
+            <th>Notes</th>
+            <td class="notes">Some companies make their source code publicly
+              available, allowing some real usage but restricting other
+              usage in line with their business model.</td>
+          </tr>
+        </table>
       </div>
 
       <div class="level">
         <h4>Level 1: <b>Privately Shared Software</b></h4>
 
-        <p>Some companies make their source code available to customers or
-        other parties under contractual license or confidentiality terms.</p>
-
+        <table>
+          <tr class="governance">
+            <th>Governance</th>
+            <td>corporate</td>
+          </tr>
+          <tr class="freedoms">
+            <th>Freedoms</th>
+            <td>
+              <span class="red">run singly</span>
+              <span class="red">privately read</span>
+              <span class="red">possibly modify</span>
+              <span class="redder"><strike>redistribute</strike></span>
+            </td>
+          </tr>
+          <tr class="notes">
+            <th>Notes</th>
+            <td class="description">Some companies make their source code
+              privately available to customers or other parties under
+              contractual license or confidentiality terms.</td>
+          </tr>
+        </table>
       </div>
 
       <h3>Least Available</h3>
 
       <h2>Closed Source</h2>
 
-      <p>Source code is not shared outside of the company that owns it.</p>
+      <div class="level closed">
+        <table>
+          <tr class="governance">
+            <th>Governance</th>
+            <td>corporate</td>
+          </tr>
+          <tr class="freedoms">
+            <th>Freedoms</th>
+            <td>
+              <span class="red">possibly run</span>
+              <span class="redder"><strike>read</strike></span>
+              <span class="redder"><strike>modify</strike></span>
+              <span class="redder"><strike>redistribute</strike></span>
+            </td>
+          </tr>
+          <tr class="notes">
+            <th>Notes</th>
+            <td class="description">Source code is not shared outside of the
+              company that owns it.</td>
+          </tr>
+        </table>
+      </div>
 
     </div>
   </body>

@@ -41,12 +41,43 @@ h4 {
 p {
   margin: 6pt 0;
 }
+
 .level {
   margin-left: 24pt;
 }
-.level p {
+.level.closed  {
+  margin-left: 0;
+}
+.level table {
+  margin: 6pt 0 24pt;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.level th {
+  width: 1%;
+  white-space: nowrap;
+  text-align: left;
+  padding-right: 6pt;
+  vertical-align: top;
   color: #999;
 }
+.level td {
+  vertical-align: top;
+  padding-bottom: 3pt;
+}
+.level .freedoms span {
+  display: block;
+}
+.level .notes {
+  color: #999;
+}
+
+.green { color: #00B70B; }
+.greenish { color: #92BD09; }
+.orange { color: #FFC107; }
+.red { color: #C30000; }
+.redder { color: #730000; }
+
 blockquote {
   margin: 6pt 0;
   border-left: 1px solid black;
